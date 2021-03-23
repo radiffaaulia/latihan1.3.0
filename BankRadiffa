@@ -1,0 +1,52 @@
+package BankRadiffa;
+
+/**
+ *
+ * @author radiffa aulia
+ */
+public class Bank {
+
+    int saldo, simpanUang, ambilUang;
+    
+    public Bank (){
+        this.saldo=100000;
+        this.simpanUang=500000;
+        this.ambilUang=150000;
+    }
+    
+    public void saldo (int saldo, int simpanUang, int ambilUang){
+        System.out.println("Selamat Datang di Bank Radiffa");
+        System.out.println("Saldo saat ini : " + "Rp. " + saldo);
+        
+        
+    }
+
+    public void simpanUang(int simpanUang){
+        saldo = saldo=simpanUang;
+        System.out.println("Simpan Uang    : Rp. " + simpanUang);
+        System.out.println("Saldo saat ini : Rp. " + saldo);
+        System.out.println("__________________________________");
+    }
+    public void ambilUang(int ambilUang){
+        saldo = saldo-ambilUang;
+        System.out.println("Ambil uang     : Rp. " + ambilUang);
+        System.out.println("Saldo saat ini : Rp. " + saldo);
+        
+}
+}
+=========================================================================
+package BankRadiffa;
+
+/**
+ *
+ * @author radiffa aulia
+ */
+public class BankBeraksi {
+      public static void main(String[] args) {
+        Bank BankRadiffa = new Bank();
+        BankRadiffa.saldo(100000, 500000, 150000);
+        BankRadiffa.simpanUang(500000);
+        BankRadiffa.ambilUang(150000);
+        
+    }
+}
