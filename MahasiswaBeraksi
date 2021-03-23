@@ -1,0 +1,37 @@
+package Mahasiswa;
+
+/**
+ *
+ * @author radiffa aulia
+ */
+public class Mahasiswa {
+    String membaca;
+    int nyontek;
+    String modifikasi;
+    
+    
+    void printMahasiswa(){
+        System.out.println("Cara membaca cepat : \n"+ membaca +"\n");
+        
+        System.out.println("Ada " + nyontek + " Cara nyontek yang baik dan benar");
+        System.out.println("Cara memodifikasi contekan agar tidak ketauhan : " + modifikasi);
+        
+    }
+}
+==========================================================================================================
+package Mahasiswa;
+
+/**
+ *
+ * @author radiffa aulia
+ */
+public class MahasiswaBeraksi {
+     public static void main (String [] args) {
+        Mahasiswa mahasiswa2D = new Mahasiswa ();
+        
+                  mahasiswa2D.membaca = "Buku Pelajaran";
+                  mahasiswa2D.nyontek = 20;
+                  mahasiswa2D.modifikasi = "Ada beberapa cara dengan mengubah beberapa kalimat";
+                  mahasiswa2D.printMahasiswa();
+}
+}
