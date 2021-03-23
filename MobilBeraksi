@@ -1,0 +1,32 @@
+package Mobil;
+
+/**
+ *
+ * @author radiffa aulia
+ */
+public class Mobil {
+     String warna;
+     int tahunproduksi;
+    
+
+}
+======================================
+package Mobil;
+
+/**
+ *
+ * @author radiffa aulia
+ */
+public class MobilBeraksi {
+        public static void main(String[] args) {
+        Mobil mobilRadiffa = new Mobil();
+        
+        mobilRadiffa.warna = "Kuning";
+        mobilRadiffa.tahunproduksi = 2003;
+        
+        System.out.println("warna: " + mobilRadiffa.warna);
+        System.out.println("tahun produksi: " + mobilRadiffa.tahunproduksi);
+        
+    }
+
+}
