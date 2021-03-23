@@ -1,0 +1,39 @@
+package Parameter;
+
+/**
+ *
+ * @author radiffa aulia
+ */
+public class Matematika {
+     void pertambahan (int a, int b) {
+        System.out.println ("hasil : " + (a + b));
+        
+    }
+    void pengurangan (int a, int b) {
+        System.out.println ("hasil : " + (a - b));
+    }
+    void perkalian (int a, double b) {
+        System.out.println ("hasil : " + (a * b));
+    }
+    void pembagian (float a, float b) {
+        System.out.println ("hasil : " + (a / b));
+    }
+    
+}
+===========================================================
+package Parameter;
+
+/**
+ *
+ * @author radiffa aulia
+ */
+public class MatematikaBeraksi {
+    public static void main (String [] args) {
+        Matematika matematikaimut = new Matematika ();
+        
+        matematikaimut.pertambahan (15,30);
+        matematikaimut.pengurangan (40,5);
+        matematikaimut.perkalian (9,6);
+        matematikaimut.pembagian (16,4);
+    }
+}
